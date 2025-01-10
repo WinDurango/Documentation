@@ -6,7 +6,7 @@ import { GitChangelog, GitChangelogMarkdownSection } from '@nolebase/vitepress-p
 
 let desc = "Documentation for the WinDurango Xbox One Compatibility Layer.";
 let title = "WinDurango - Documentation";
-let link = "https://WinDurango.github.io/documentation/";
+let link = "https://WinDurango.github.io/Documentation/";
 
 export default withPwa(defineConfig({
   vite: {
@@ -26,7 +26,7 @@ export default withPwa(defineConfig({
   lastUpdated: true,
   outDir: "dist",
   srcDir: "docs",
-  base: "/documentation/",
+  base: "/Documentation/",
   sitemap: {
     hostname: link
   },
@@ -65,9 +65,9 @@ export default withPwa(defineConfig({
     logo: 'assets/WinDurango.svg'
   },
   head: [
-    ['link', { rel: 'icon', href: '/documentation/assets/WinDurango.png' }],
-    ['link', { rel: 'shortcut icon', href: '/documentation/assets/WinDurango.png' }],
-    ['link', { rel: 'apple-touch-icon', sizes: '1024x1024', href: '/documentation/assets/WinDurango.png' }],
+    ['link', { rel: 'icon', href: '/Documentation/assets/WinDurango.png' }],
+    ['link', { rel: 'shortcut icon', href: '/Documentation/assets/WinDurango.png' }],
+    ['link', { rel: 'apple-touch-icon', sizes: '1024x1024', href: '/Documentation/assets/WinDurango.png' }],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'theme-color', content: '#3c963c' }],
     ['meta', { name: 'description', content: desc }],
@@ -104,7 +104,7 @@ export default withPwa(defineConfig({
       theme_color: '#3c963c',
       icons: [
         {
-          src: '/documentation/assets/WinDurango.png',
+          src: '/Documentation/assets/WinDurango.png',
           sizes: '1024x1024',
           type: 'image/png',
         },
