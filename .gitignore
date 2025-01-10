@@ -1,0 +1,6 @@
+.vitepress/cache
+node_modules
+dist
+/dist2
+.idea/discord.xml
+/.idea
