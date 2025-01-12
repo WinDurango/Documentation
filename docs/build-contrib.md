@@ -14,6 +14,7 @@
    - C++ (143) Universal Windows Platform Tools
    - .NET Desktop Development
    - Game Development with C++
+8. Graphics Tools (from `Settings > Apps > Optional Features` (Windows 10) or `Settings > System > Optional Features` (Windows 11))
 
 ## Building
 
