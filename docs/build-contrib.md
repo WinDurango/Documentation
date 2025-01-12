@@ -2,15 +2,16 @@
 
 ## Prerequisites
 
-## To launch
+### To launch
+1. [Developer Mode enabled](#enabling-developer-mode)
+2. Windows 10 (or later)
+3. Windows App SDK (if debugging)
+4. Visual Studio 2022 OR WinDbg (for debugging if needed)
+5. Visual C++ Redistributables (unsure which are needed)
+6. Graphics Tools (from `Settings > Apps > Optional Features` (Windows 10) or `Settings > System > Optional Features` (Windows 11))
+7. The latest release/[artifact](https://github.com/WinDurango/WinDurango/actions/workflows/msbuild.yml)
 
-1. Windows 10 (or later)
-2. Windows App SDK (if debugging)
-3. Visual Studio 2022 OR WinDbg (for debugging if needed)
-4. Visual C++ Redistributables (unsure which are needed)
-5. Graphics Tools (from `Settings > Apps > Optional Features` (Windows 10) or `Settings > System > Optional Features` (Windows 11))
-
-## To build
+### To build
 
 1. Everything from [the launch requirements](#to-launch)
 2. Windows 10 (or later)
@@ -25,6 +26,14 @@
    - C++ (143) Universal Windows Platform Tools
    - .NET Desktop Development
    - Game Development with C++
+8. The project cloned to a folder
+
+## Running the package
+
+To run the package, you need to setup the [Launch prerequisites](#to-launch) and have already [registered the package](#registering-the-uwp-package).   
+You'll need to also copy in all the DLLs from the latest release/[artifact](https://github.com/WinDurango/WinDurango/actions/workflows/msbuild.yml) into your app's Mount folder (the folder that has the EXE).  
+
+After that, you just need to open the app through the start menu. (or other preferred way of running UWP apps)
 
 ## Registering the UWP package
 
@@ -73,10 +82,6 @@ TODO: DO THE REST SINCE THIS CHANGED LOTS
 4. Build the project   
    - Note: You may need to build the Detours separately.
    - You can build any part of the project by selecting individual solution(s), right-clicking, and clicking "Build Selection"
-
-## Using
-Note that BuildType in this case is the dropdown that is shown at the top of the IDE (usually Debug) near the Local Windows Debugger button, you have a few choices, namely Release.
-1. Copy the DLLs from `x64\{BuildType}` as well as the DLL from the inner `winrt_x` folder into the same folder as the Xbox program's executable. 
    
 ## Other
 ### Generating IDLs from WinMDs
