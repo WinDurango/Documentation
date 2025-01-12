@@ -2,7 +2,18 @@
 
 ## Prerequisites
 
+## To launch
+
 1. Windows 10 (or later)
+2. Windows App SDK (if debugging)
+3. Visual Studio 2022 OR WinDbg (for debugging if needed)
+4. Visual C++ Redistributables (unsure which are needed)
+5. Graphics Tools (from `Settings > Apps > Optional Features` (Windows 10) or `Settings > System > Optional Features` (Windows 11))
+
+## To build
+
+1. Everything from [the launch requirements](#to-launch)
+2. Windows 10 (or later)
 3. Windows App SDK
 4. Visual Studio 2022
 5. Git
@@ -14,7 +25,6 @@
    - C++ (143) Universal Windows Platform Tools
    - .NET Desktop Development
    - Game Development with C++
-8. Graphics Tools (from `Settings > Apps > Optional Features` (Windows 10) or `Settings > System > Optional Features` (Windows 11))
 
 ## Building
 
