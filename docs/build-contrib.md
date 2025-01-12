@@ -26,7 +26,25 @@
    - .NET Desktop Development
    - Game Development with C++
 
-## Building
+## Registering the UWP package
+
+You cannot normally run a UWP app's EXE file directly, instead you have to register the UWP app and launch it from the Start Menu/a Debugger.
+
+1. [Enable Developer Mode](#enabling-developer-mode)
+2. Go to the Mount folder of your game (where the EXE sits)
+3. Open Powershell.exe to that directory
+4. Run `Add-AppXPackage -Register .\AppxManifest.xml`
+
+## Enabling Developer Mode
+
+To register UWP apps, you have to enable Developer Mode.
+
+1. Go to For Developers in Settings (path differs depending on Windows version, read below)
+   - Settings > Windows Update > For Developers (Windows 10)
+   - Settings > System > For Developers (Windows 11)
+2. Enable Developer Mode
+
+# Building
 
 1. Clone the repo  
    - `git clone --recursive https://github.com/WinDurango/WinDurango.git`

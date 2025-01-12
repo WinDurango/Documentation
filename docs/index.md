@@ -5,12 +5,12 @@ hero:
   name: "WinDurango Documentation"
   tagline: "Documentation for the WinDurango Xbox One Compatibility Layer."
 features:
-  - title: Building and Contributing
+  - title: Setup, Building, and Contributing
     link: /build-contrib.md
-    details: How to build the project, and contribute.
+    details: How to use, build, and contribute to the project.
     icon: 🔨
   - title: Playable Games
     link: /playable-games.md
-    details: What can run with WinDurango, and how well does it work.
+    details: What can run with WinDurango, and how well do they run.
     icon: 🎮
 ---
