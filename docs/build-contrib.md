@@ -9,11 +9,11 @@
 4. Visual Studio 2022 OR WinDbg (for debugging if needed)
 5. Visual C++ Redistributables (unsure which are needed)
 6. Graphics Tools (from `Settings > Apps > Optional Features` (Windows 10) or `Settings > System > Optional Features` (Windows 11))
-7. The latest release/[artifact](https://github.com/WinDurango/WinDurango/actions/workflows/msbuild.yml)
+7. The latest [release](https://github.com/WinDurango/WinDurango/releases)/[artifact](https://github.com/WinDurango/WinDurango/actions/workflows/msbuild.yml)
 
 ### To build
 
-1. Everything from [the launch requirements](#to-launch)
+1. Everything from [the launch requirements](#to-launch) (except for the release/artifact)
 2. Windows 10 (or later)
 3. Windows App SDK
 4. Visual Studio 2022
@@ -31,7 +31,7 @@
 ## Running the package
 
 To run the package, you need to setup the [Launch prerequisites](#to-launch) and have already [registered the package](#registering-the-uwp-package).   
-You'll need to also copy in all the DLLs from the latest release/[artifact](https://github.com/WinDurango/WinDurango/actions/workflows/msbuild.yml) into your app's Mount folder (the folder that has the EXE).  
+You'll need to also copy in all the DLLs from the latest [release](https://github.com/WinDurango/WinDurango/releases)/[artifact](https://github.com/WinDurango/WinDurango/actions/workflows/msbuild.yml) into your app's Mount folder (the folder that has the EXE).  
 
 After that, you just need to open the app through the start menu. (or other preferred way of running UWP apps)
 

@@ -39,7 +39,7 @@ export default withPwa(defineConfig({
     siteTitle: "WinDurango",
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Contributing', link: '/build-contrib' },
+      { text: 'Setup', link: '/build-contrib' },
       { text: 'Team', link: '/team' },
     ],
 
@@ -78,7 +78,7 @@ export default withPwa(defineConfig({
   transformHead: ({ pageData }) => {
     const head: HeadConfig[] = []
 
-    head.push(['meta', { property: 'og:title', content: `${pageData.title} | ${title}`}]);
+    head.push(['meta', { property: 'og:title', content: `${pageData.title} ${pageData.title != "" ? "|" : ""} ${title}`}]);
     head.push(['meta', { property: 'og:description', content: desc }])
     head.push(['meta', { property: 'og:url', content: link + pageData.relativePath }]);
     head.push(['meta', { property: 'og:locale', content: 'en_US' }]);
@@ -89,7 +89,7 @@ export default withPwa(defineConfig({
     head.push(['link', { rel: 'canonical', href: link + pageData.relativePath }]);
     head.push(['meta', { name: 'robots', content: 'index, follow' }]);
     head.push(['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }]);
-    head.push(['meta', { name: 'twitter:title', content: `${pageData.title} | ${title}` }]);
+    head.push(['meta', { name: 'twitter:title', content: `${pageData.title} ${pageData.title != "" ? "|" : ""} ${title}` }]);
     head.push(['meta', { name: 'twitter:description', content: desc }]);
     head.push(['meta', { name: 'twitter:url', content: link + pageData.relativePath }]);
 
