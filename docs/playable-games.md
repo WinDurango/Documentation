@@ -14,7 +14,7 @@
 | Minecraft: Xbox One Edition | Partial         |               | Minigames do not work, and saving is broken (files are shoved in the wrong place) |
 | Stardew Valley              | Does not run    |               |                                                                                   |
 | Shovel Knight               | Does not run    |               |                                                                                   |
-| Sonic Mania                 | Does not run    |               |                                                                                   |
+| Sonic Mania                 | Title Screen    | Not merged    |                                                                                   |
 | Terraria                    | Does not run    |               |                                                                                   |
 | The Escapists               | Does not run    |               |                                                                                   |
 | Trackmania (2020)           | Does not run    |               |                                                                                   |
