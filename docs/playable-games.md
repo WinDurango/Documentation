@@ -6,7 +6,7 @@
 | CHAOS;CHILD                 | Does not run    |               |                                                                                   |
 | Cuphead                     | Does not run    |               |                                                                                   |
 | Destiny                     | Does not run    |               |                                                                                   |
-| Fortnite                     | Does not run     |                |                                                                                   |
+| Fortnite                    | Does not run    |               |                                                                                   |
 | Forza Horizon 2             | Does not run    |               |                                                                                   |
 | Forza Horizon 2 Demo        | Does not run    |               |                                                                                   |
 | Forza Horizon 2 F&F         | Does not run    |               |                                                                                   |
