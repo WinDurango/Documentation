@@ -5,7 +5,7 @@
 ### To launch
 1. [Developer Mode enabled](#enabling-developer-mode)
 2. Windows 10 (or later)
-3. Windows App SDK (if debugging)
+3. Windows App SDK
 4. Visual Studio 2022 OR WinDbg (for debugging if needed)
 5. Visual C++ Redistributables (unsure which are needed)
 6. Graphics Tools (from `Settings > Apps > Optional Features` (Windows 10) or `Settings > System > Optional Features` (Windows 11))
