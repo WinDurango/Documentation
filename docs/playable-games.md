@@ -16,7 +16,7 @@
 | Shovel Knight               | Does not run    |               |                                                                                   |
 | Sonic Mania                 | Title Screen    | Not merged    |                                                                                   |
 | Terraria                    | Does not run    |               |                                                                                   |
-| The Escapists               | Does not run    |               |                                                                                   |
+| The Escapists               | Title Screen    | Not merged    | No Audio, Error Thrown when Press Play                                            |
 | Trackmania (2020)           | Does not run    |               |                                                                                   |
 
 
