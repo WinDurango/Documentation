@@ -10,9 +10,9 @@
 | Forza Horizon 2 Demo        | Does not run    |               |                                                                                   |
 | Forza Horizon 2 F&F         | Does not run    |               |                                                                                   |
 | Forza Motorsport 5          | Does not run    |               |                                                                                   |
-| Lego Dimensions             | Does not run    |               |
+| Lego Dimensions             | Does not run    |               |                                                                                   |
 | MGSV: Ground Zeroes         | Does not run    |               |                                                                                   |
-| Minecraft: Xbox One Edition | Partial         |               | Minigames do not work, and saving is broken (files are shoved in the wrong place) |
+| Minecraft: Xbox One Edition | Playable        |               |                                                                                   |
 | Stardew Valley              | Does not run    |               |                                                                                   |
 | Shovel Knight               | Does not run    |               |                                                                                   |
 | Sonic Mania                 | Title Screen    | Not merged    |                                                                                   |
