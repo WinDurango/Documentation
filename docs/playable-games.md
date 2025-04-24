@@ -5,9 +5,9 @@
 | Burnout Paradise Remastered | Does not run    |               |                                                                                     |
 | CHAOS;CHILD                 | Does not run    |               |                                                                                     |
 | Cuphead                     | Does not run    |               |                                                                                     |
-| Destiny                     | Does not run    |               |                                                                                     |
-| Forza Horizon 2             | Boots           |               | Boots to the title menu but crashes after words must use the Forza-Horizon-2 branch |
-| Forza Horizon 2 Demo        | Does not run    |               |                                                                                     |
+| Destiny                     | Does not run    |               |                                                                                                                                                       |
+| Forza Horizon 2             | Boots           |               | Boots to the title menu but crashes after words must use the [Forza-Horizon-2](https://github.com/WinDurango/WinDurango/tree/Forza-Horizon-2) branch  |
+| Forza Horizon 2 Demo        | Does not run    |               |                                                                                                                                                       |
 | Forza Horizon 2 F&F         | Does not run    |               |                                                                                     |
 | Forza Motorsport 5          | Does not run    |               |                                                                                     |
 | Lego Dimensions             | Does not run    |               |                                                                                     |
