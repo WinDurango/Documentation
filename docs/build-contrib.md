@@ -18,9 +18,9 @@
 
 6. Download `Visual Studio 2022 Community` at https://visualstudio.microsoft.com/downloads/ and then in the Visual Studio Installer, goto the `Workloads` tab and select `Desktop development with C++`
 	
-7. Download the latest release https://github.com/WinDurango/WinDurango/releases or artifact https://github.com/WinDurango/WinDurango/actions of Windurango. (Note: You need to be signed into a github account in order to download the latest artifact from Github actions). If you want better performance you may also download the other `d3d11_x.dll` and use it instead of the default one. 
+7. Have a decrypted copy of your Xbox One game. This can be legally obtained from an exploited Xbox One with Durango Dumpling.
 
-8. Have a decrypted copy of your Xbox One game. This can be legally obtained from an exploited Xbox One with Durango Dumpling.
+8. Download the latest release https://github.com/WinDurango/WinDurango/releases or artifact release https://github.com/WinDurango/WinDurango/actions of Windurango. (Note: You need to be signed into a github account in order to download the latest artifact from Github actions). If you want better performance you may also download the other `d3d11_x.dll` and use it instead of the default one. 
 
 ### To build
 1. Everything from [the launch requirements](#to-launch) (except for the release/artifact)
@@ -55,6 +55,30 @@
    
 ## Part 2: Registering and Running the UWP Package
 
+### Option 1: Using the UI
+
+Note: As of writing this, Windurango UI is relatively unstable and sometimes just doesn't work. If you are having trouble with the UI, see the next section on Using Powershell
+ 
+ 1. Download the latest artifact release https://github.com/WinDurango/WinDurango.UI/actions of Windurango UI. (Note: You need to be signed into a github account in order to download the latest artifact from Github actions). Extract the .zip file to somewhere accessible.
+    
+2. Locate the "Mount" Folder in your Xbox Game files (For Minecraft you should see Minecraft.Client.exe in it.) Copy the mount folder to an easily accessible location (ie: your documents folder or the root of your hard drive). Don't worry about the EmbeddedXvd folder or era.vbi file as they are not needed.
+
+3. Extract all of the `.dll` files from Windurango and place them into the Mount folder. If you want to use the other `d3d11_x.dll`, copy it to the mount folder and replace the default one with it.
+   
+4. Run the `Windurango UI.exe` from the Windurango UI folder. Note: Windows Smart Screen may give a warning, just launch the program anyway. 
+   
+5. Select the `Install Package` option
+   
+6. In the pop-up file explorer window, navigate to the "mount" folder of your game. Once you have it selected or you are inside it, select the folder.
+   
+7. A prompt should appear with the name of the game, the publisher, and the file path. Select `Install`
+    
+8. The game should install and appear on the main menu of Windurango UI and in the Windows Start Menu. 
+
+9. From here, you should be able to launch the game from your start menu. A cmd window should also appear and various logs should show up. Dont worry if a million errors show up, that is normal since this is still very early in development. If the game closes almost instantly with no error messages, then you are likely missing dependencies from Visual Studio.
+
+### Option 2: Using Powershell
+
 1. Locate the "Mount" Folder in your Xbox Game files (For Minecraft you should see Minecraft.Client.exe in it.) Copy the mount folder to an easily accessible location (ie: your documents folder or the root of your hard drive). Don't worry about the EmbeddedXvd folder or era.vbi file as they are not needed. 
 
 2. Extract all of the `.dll` files from Windurango and place them into the Mount folder. If you want to use the other `d3d11_x.dll`, copy it to the mount folder and replace the default one with it. 
@@ -64,6 +88,8 @@
 4. Once in the mount folder, run `Add-AppxPackage -Path AppxManifest.xml -Register` (or `Add-AppXPackage -Register .\AppxManifest.xml`). This will add the game to your start menu. (Note: This step requires [Developer mode](#to-launch) to be enabled otherwise you will get an error)
 
 5. From here, you should be able to launch the game from your start menu. A cmd window should also appear and various logs should show up. Dont worry if a million errors show up, that is normal since this is still very early in development. If the game closes almost instantly with no error messages, then you are likely missing dependencies from Visual Studio.
+
+   Note: If you decide to use Windurango UI after already installing the game through Powershell, the UI has a feature to add games that are already installed, either by detecting them or by selecting the game from a list of installed UWP apps. However, this feature sometimes doesnt work and may require uninstalling and reinstalling the game via the UI instead of Powershell. If you have saves you want to backup before doing this, see [Managing Saves](#managing-saves)
 
 # Building
 
@@ -100,8 +126,12 @@ TODO: DO THE REST SINCE THIS CHANGED LOTS
 TODO
 
 ### Installing Mods
-Mods are in the .dll file format.
+Mods are in the .dll file format. They can be installed through Windurango UI or manually in File Explorer. 
 In your mount folder, create a new folder called mods and copy whatever mod .dll files you have to it. Note that many mods are extremely version specific (ex. a minecraft mod for version 1.61.0.1 will crash on version 1.61.0.2) so make sure you have the correct version of either the game or the mod (Note to mod devs: PLEASE specify the version of the game you used to make the mod to aleviate this issue). 
+
+### Managing Saves
+To locate your saves, go to your User folder and then AppData\Local\Packages\NameOfXboxGame\LocalState\WinDurango\UserStorage. For Minecraft, the directory is AppData\Local\Packages\Minecraft_zjr0dfhgjwvde\LocalState\WinDurango\UserStorage.
+The easiest way to manage and rename save files is through Windurango UI, which has a feature to manage and rename save files. 
 
 # Contributing
 TODO
