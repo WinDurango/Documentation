@@ -19,6 +19,10 @@
 | Terraria                    | Does not run    |               |                                                                                     |
 | The Escapists               | Title Screen    | Not merged    | No Audio, Error Thrown when Press Play                                              |
 | Trackmania (2020)           | Does not run    |               |                                                                                     |
+| Project Spark               | Does not run    |               |                                                                                     |
+| The Crew                    | Does not run    |               |                                                                                     |
+| UNDERTALE                   | Does not run    |               |                                                                                     |
+
 
 
 ## Keys
